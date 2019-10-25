@@ -1,10 +1,8 @@
 class PagesController < ApplicationController
 
+  #this creates the context for all users
   def index
-  end
-
-  def gamepage
-    @users = User.count
+    @user_array = User.all.pluck(:state)
   end
 
 end
