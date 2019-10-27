@@ -3,12 +3,13 @@ Rails.application.routes.draw do
 
   #Pages
   root to: 'pages#index'
-  get 'gamepage', to: 'pages#gamepage', as: 'gamepage'
+  get 'users_index', to: 'pages#users_index', as: 'users_index'
 
   #Users
   post 'create_user', to: 'users#create', as: 'create_user'
   post 'clear_users', to: 'users#clear', as: 'clear_users'
   post  'natural_law', to: 'users#natural_law', as: 'natural_law'
+  
 
 
 
