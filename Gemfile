@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'pry', '~> 0.12.2'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "bootstrap_form", "~> 4.0"

@@ -3,4 +3,11 @@
 <div id='clear-users' style='text-align:center'><%= link_to 'Let nature do its thing!', modify_users_path, method: :post %></div>
 <div id='clear-users' style='text-align:center'><%= link_to 'Scorch the Earth!', clear_users_path, method: :post %></div>
 
-<h1><%= @user_array %></h1>
+<table class = 'table'>
+  <% @users.each do |user| %>
+    <tr><td><%= @users[0..4] %></td></tr>
+    <tr><td><%= @users[5..9] %></td></tr>
+    <tr><td><%= @users[10..14] %></td></tr>
+    <tr><td><%= @users[15..19] %></td></tr>
+  <% end %>
+</table>
